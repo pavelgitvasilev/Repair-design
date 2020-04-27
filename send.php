@@ -22,14 +22,14 @@ try {
     $mail->Host       = 'smtp.yandex.ru';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     //$mail->phone = "+79263282890";
-    $mail->Username   = "e.glatcova@yandex.ru";                    
-    $mail->Password   = 'glatcova1995';                               // SMTP password
+    $mail->Username   = "vpnprint@gmail.com";                    
+    $mail->Password   = 'duj5hwgt4d';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('e.glatcova@yandex.ru', 'Катя');
-    $mail->addAddress('e.glatcova@yandex.ru');     // 
+    $mail->setFrom('vpnprint@gmail.com', 'Павел');
+    $mail->addAddress('vpnprint@gmail.com');     // 
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
