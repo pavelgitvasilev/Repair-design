@@ -1,0 +1,87 @@
+.col
+  &-31
+    position: relative
+.swiper
+  &-fashion
+    right: 0
+    height: 1100px
+    max-width: 740px
+    margin-top: -190px
+    padding-top: 190px
+.fashion
+  margin-top: 190px
+  margin-bottom: 100px
+  position: relative
+  background: $dark url('../img/fashion-bg.jpg') no-repeat center
+  background-size: cover
+  height: 864px
+  color: $light
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.85)
+  &__row
+  &__slide
+    position: relative
+  &__image
+    &--one
+      position: absolute
+      left: 0
+      top: -100px
+    &--two
+      position: absolute
+      right: 0
+      top: -175px
+    &--three
+      position: absolute
+      left: 0
+      bottom: 67px
+    &--four
+      position: absolute
+      right: 0
+      bottom: 150px
+  &__title
+    font-family: 'Yeseva one', cursive
+    font-weight: normal
+    font-size: 1.929rem
+    line-height: 2.64rem
+    text-transform: uppercase
+    color: $primary
+    margin-top: 5.2rem
+    margin-bottom: 3.3rem
+  &__wrap
+    display: flex
+    flex-direction: column
+.name
+  &__wrap
+    text-decoration: none
+    background-image: linear-gradient(currentColor, currentColor)
+    background-position: 0% 100%
+    background-repeat: no-repeat
+    background-size: 0% 2px
+    transition: background-size .3s
+    &:hover
+      background-size: 62% 2px
+      cursor: pointer
+      color: $primary
+      &:hover
+        cursor: pointer
+      background-size: 62% 2px
+.fashion
+  &__name
+    display: inline
+    width: auto
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 1.51rem
+    margin-bottom: 1.78rem
+    &--visible
+      color: $primary
+      text-decoration: none
+      background-image: linear-gradient(currentColor, currentColor)
+      background-position: 0% 100%
+      background-repeat: no-repeat
+      background-size: 62% 2px

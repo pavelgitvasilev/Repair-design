@@ -1,0 +1,92 @@
+.control
+  position: relative
+  z-index: 10
+  &__heading
+    font-size: 1.45rem
+  &__section-title
+    margin-bottom: 2.214rem
+    margin-top: -30rem
+  &__video
+    position: relative
+    margin: auto
+    display: flex
+    justify-content: center
+    margin-bottom: 4.428rem
+    max-width: 58.357rem
+    min-height: 31rem
+    background: $dark url('../img/video-mask.jpg') center no-repeat
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+    z-index: 33
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba($dark, 0.8)
+  &__text
+    opacity: 0
+    visibility: hidden
+    max-width: 40.785rem
+    margin: auto
+    margin-bottom: 4.285rem
+    text-align: center
+    font-size: 1.428rem
+    line-height: 2.42rem
+  &--animate
+    opacity: 1
+    visibility: visible
+    animation-name: slideTop
+    animation-duration: 2s
+    &::before
+      content: ''
+      display: block
+      width: 55px
+      height: 2px
+      margin: auto
+      margin-bottom: 2.5rem
+      background-color: $primary
+      border-radius: 30px
+  &__form
+    position: relative
+    z-index: 99
+    display: flex
+    margin: auto
+    margin-top: -70px
+    flex-wrap: wrap
+    max-width: 55rem
+    align-items: flex-end
+    justify-content: space-between
+    background: $light
+  &__sent
+    position: relative
+    z-index: 90
+    display: flex
+    margin: auto
+    flex-wrap: wrap
+    max-width: 55rem
+    justify-content: center
+    align-items: center
+    text-align: center
+  &__input-group
+    display: flex
+    flex-direction: column
+    flex-basis: 30%
+    position: relative
+  &__label
+    color: $dark
+  &__button
+    padding: 1.15rem 3.95rem
+    font-size: 1.2rem
+  &__policy
+    flex-basis: 100%
+    margin-top: 2rem
+    display: flex
+    justify-content: center
+  &__input
+    color: $dark
+  &__label
+    font-size: 1.15rem
+.video
+  &__play
+    position: relative
+    cursor: pointer

@@ -1,0 +1,80 @@
+*, *:before, *:after
+  box-sizing: border-box  
+html
+  font-size: 14px
+body
+  font-family: 'Futura Book', sans-serif
+  font-size: 1rem
+img
+  max-width: 100%
+.section
+  padding: 60px 0
+  &--dark
+    background: $dark url('../img/bg-lines.svg') center repeat
+    color: $light
+  &-title
+    text-align: center
+    &--light
+      color: $light
+    &--left
+      text-align: left
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva one', cursive
+      line-height: 138.6%
+      font-weight: normal
+      font-size: 1.45rem
+      &--primary
+        color: $primary
+        font-size: 1.92rem
+        line-height: 2.64rem
+        font-weight: normal
+      &--light
+        color: $light
+    &__word
+      display: flex
+      align-items: center   
+      &::after
+        content: ''
+        width: 90px
+        height: 1px
+        margin-left: 2.2rem
+        background-color: $primary
+    &__image
+      display: flex
+      align-items: center
+      justify-content: center
+      &::before, &::after
+        content: ''
+        width: 32px
+        height: 2px
+        background-color: $primary
+        margin: 0 10px
+.sent
+  &__text
+    margin-top: 70px
+    color: $light
+    text-align: center
+    font-family: 'Futura Demi'
+    font-style: normal
+    font-weight: 500
+    font-size: 19px
+    line-height: 3.5rem
+    &--secondary
+      color: $light
+      text-align: center
+      font-family: 'Futura Demi'
+      color: $secondary
+      margin-right: 40px
+      font-size: 16px
+  &__vk
+    margin: auto
+    margin-top: 70px
+    width: 64px
+    &:hover
+      cursor: pointer
+.valid
+  border: red   
+  outline: none
+.label
+  color: $secondary

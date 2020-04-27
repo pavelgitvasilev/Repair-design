@@ -1,0 +1,124 @@
+.footer
+  position: relative
+  background: $dark url('../img/footer-bg.jpg') no-repeat
+  center
+  background-size: cover
+  padding-top: 3rem
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.6) 
+    z-index: -1
+  &__wrap
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    z-index: 1000
+    max-width: 37.142rem
+    height: 33rem
+    background-color: $dark
+    max-width: 63.07rem
+    margin: auto
+    margin-bottom: 3.714rem
+    margin-top: -24rem
+    padding: 2.5rem
+  &__sent
+    position: absolute
+    max-width: 63.142rem
+    height: 33rem
+    left: 0
+    right: 0
+    top: 0
+    margin: auto
+    margin-top: -24rem
+    z-index: 100
+    background: $black
+    display: flex
+    flex-direction: column
+  &__title
+    text-transform: uppercase
+    font-family: 'Yeseva one', cursive
+    font-weight: normal
+    font-size: 1.428rem
+    text-align: center
+    margin-bottom: 3.3rem
+    margin-top: 0
+  &__form
+    display: flex
+    flex-wrap: wrap
+    max-width: 37.142rem
+    margin: auto
+    &-wrap
+      position: relative
+  &__input
+    padding-top: 0.3rem
+    width: 85%
+    margin-right: auto
+    &-group
+      width: auto
+      display: flex
+      width: 50%
+      flex-direction: column
+      margin-bottom: 3.2rem
+      &--full-width
+        flex-basis: 100%
+        margin-bottom: 2rem
+    &--question 
+      width: 92.5%
+  &__policy
+    flex-basis: 100%
+    margin-bottom: 3.6rem
+  &__button
+    margin: auto
+    padding: 1.285rem 4.785rem
+  &__menu
+    background-color: $dark
+    padding: 2.285rem 0rem
+  &__map
+    display: flex
+    justify-content: center
+    margin: auto
+    margin-top: 3rem
+    margin-bottom: 4.5rem
+    min-height: 33.21rem
+    max-width: 66.07rem
+    position: relative
+    z-index: 1000
+  &__contacts
+    width: 100%
+    margin-top: 5rem
+  &__text
+    padding-top: 11rem
+    margin-bottom: 1.8rem
+    font-family: 'Yeseva one', cursive
+    font-weight: normal
+    font-size: 1.428rem
+    line-height: 2rem
+    text-align: center
+    text-transform: uppercase
+    color: $primary
+  &__icons
+    width: 5rem
+    margin: auto
+    display: flex
+    justify-content: space-between
+  &__icon
+    &:hover
+      border-radius: 50%
+      box-shadow: 0px -0px 7px 1px rgba($light, 0.75)
+  &__telephone
+    text-decoration: none
+    color: $primary
+    &:hover
+      cursor: pointer
+      color: $light
+      
+
+
+
