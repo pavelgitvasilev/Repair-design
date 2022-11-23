@@ -33,7 +33,7 @@
     "IE 11"],
   "dependencies": {
     "ajax": "0.0.4",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-tinypng-compress": "^1.2.5",
